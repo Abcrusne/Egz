@@ -5,10 +5,11 @@ import img1 from '../../img/img1.jpg';
 import img2 from '../../img/img2.jpg';
 import img3 from '../../img/img3.jpg';
 
-const ItemsAdministrationComponent =({ celebration,
-    //  deleteItem 
-    }) =>{
-        const imgSrc =
+const ItemsAdministrationComponent = ({
+  celebration,
+  //  deleteItem
+}) => {
+  const imgSrc =
     celebration.image === 'img1'
       ? img1
       : celebration.image === 'img2'
@@ -28,8 +29,7 @@ const ItemsAdministrationComponent =({ celebration,
         />
       </td>
       <td>
-        {/* <Link to={`/admin/celebrations/${id}`}>{celebration.name} </Link> */}
-        {celebration.name}
+        <Link to={`/celebrations/${celebration.id}`}>{celebration.title} </Link>
       </td>
       <td>
         {/* <button className="btn btn-danger" 
@@ -38,11 +38,11 @@ const ItemsAdministrationComponent =({ celebration,
           Delete item
         </button> */}
         <Link to="/delete" className="btn btn-danger">
-                Delete Item
-              </Link>
+          Delete Item
+        </Link>
       </td>
     </tr>
   );
-}
+};
 
 export default ItemsAdministrationComponent;

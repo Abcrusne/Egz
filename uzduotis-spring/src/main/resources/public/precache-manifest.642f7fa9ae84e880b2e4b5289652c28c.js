@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2567741d761c66c19c4f397fadfa3b72",
+    "revision": "3c685139642a3997d2728c1245d7e91d",
     "url": "/uzduotis-spring/index.html"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/uzduotis-spring/static/js/3.c2ec2812.chunk.js"
   },
   {
-    "revision": "e7f1d81a8753297a57e6",
-    "url": "/uzduotis-spring/static/js/main.6920700f.chunk.js"
+    "revision": "de584db9c82e2035ca69",
+    "url": "/uzduotis-spring/static/js/main.87c58fdc.chunk.js"
   },
   {
     "revision": "9aa47a683d4aba0db65e",

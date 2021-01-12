@@ -48,6 +48,7 @@ function FormComponent({
           value={flag}
           onChange={(e) => handleChange(e)}
         >
+          <option value=""></option>
           <option value="Yes">YES</option>
           <option value="No">NO</option>
         </select>
