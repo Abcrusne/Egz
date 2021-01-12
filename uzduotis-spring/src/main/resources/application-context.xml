@@ -10,13 +10,13 @@
   <!-- <context:annotation-config/> -->
   
   <context:component-scan 
-  base-package="lt2020.sveikinimai"/>
+  base-package="lt2021.sventes"/>
   
   <!-- bean definitions go here 
 
  
  
- 				<bean id="greeting2" class="lt2020.sveikinimai.entities.Greeting">		
+ 				<bean id="greeting2" class="lt2021.sventes.celebration.Celebration">		
  							
  					<property name="title" value="BEAN" />		
  					<property name="image" value="img2" />		

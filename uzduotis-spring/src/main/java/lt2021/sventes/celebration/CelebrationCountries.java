@@ -9,6 +9,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import lt2021.sventes.country.Country;
+
 @Entity
 @Table(name = "celebration_counties")
 public class CelebrationCountries {
@@ -20,9 +22,9 @@ public class CelebrationCountries {
 	@JoinColumn(name = "celebration_id")
 	private Celebration celebration;
 
-//	@ManyToOne(cascade = { CascadeType.MERGE, CascadeType.DETACH })
-//	@JoinColumn(name = "country_id")
-//	private Country country;
+	@ManyToOne(cascade = { CascadeType.MERGE, CascadeType.DETACH })
+	@JoinColumn(name = "country_id")
+	private Country country;
 
 	public CelebrationCountries() {
 		super();
@@ -42,6 +44,14 @@ public class CelebrationCountries {
 
 	public void setCelebration(Celebration celebration) {
 		this.celebration = celebration;
+	}
+
+	public Country getCountry() {
+		return country;
+	}
+
+	public void setCountry(Country country) {
+		this.country = country;
 	}
 
 }
