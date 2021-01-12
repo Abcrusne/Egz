@@ -1,5 +1,5 @@
 import React from 'react';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import img1 from '../../img/img1.jpg';
 import img2 from '../../img/img2.jpg';
 import img3 from '../../img/img3.jpg';
@@ -28,6 +28,11 @@ const ItemDetailComponent = ({ celebration }) => {
           <p>Type: {celebration.type}</p>
           <p>Flag: {celebration.flag}</p>
         </div>
+      </div>
+      <div className="row ml-5 mt-3">
+        <Link to={'/'} className="btn btn-outline-dark">
+          Go back
+        </Link>
       </div>
     </div>
   );

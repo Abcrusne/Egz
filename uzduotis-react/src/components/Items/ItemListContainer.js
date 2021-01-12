@@ -31,7 +31,7 @@ export default class ItemListContainer extends Component {
       <div className="container pt-4">
         <div className="row d-flex justify-content-center">
           {this.state.celebrations.map((celebration) => {
-            return <ItemCardComponent celebration={celebration} />;
+            return <ItemCardComponent celebration={celebration} key={celebration.id} />;
           })}
         </div>
       </div>

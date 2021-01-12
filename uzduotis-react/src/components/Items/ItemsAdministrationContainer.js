@@ -68,6 +68,7 @@ export default class ItemsAdministrationContainer extends Component {
                 return (
                   <ItemsAdministrationComponent
                     celebration={celebration}
+                    key={celebration.id}
                     // deleteItem={this.deleteItem}
                   />
                 );

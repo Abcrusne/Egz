@@ -21,7 +21,7 @@ const ItemCardComponent = ({ celebration }) => {
         alt={celebration.title}
         style={{
           height: '15rem',
-          width: '22rem',
+          width: '21rem',
         }}
       />
       <div className="card-body ">

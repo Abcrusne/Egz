@@ -25,19 +25,6 @@ function FormComponent({
           required
         />
       </div>
-      {/* <div className="form-group">
-        <label htmlFor="text">
-          <b>Text</b>
-        </label>
-        <input
-          title="text"
-          type="text"
-          className="form-control"
-          value={text}
-          onChange={(e) => handleChange(e)}
-          required
-        />
-      </div> */}
       <div className="form-group">
         <label htmlFor="desc">
           <b>Description</b>
@@ -50,17 +37,20 @@ function FormComponent({
           onChange={(e) => handleChange(e)}
         />
       </div>
-      <div className="form-group">
+      <div className="form-group  col-6 ">
         <label htmlFor="flag">
           <b>Flag</b>
         </label>
-        <input
+        <select
           title="flag"
           type="text"
           className="form-control"
           value={flag}
           onChange={(e) => handleChange(e)}
-        />
+        >
+          <option value="Yes">YES</option>
+          <option value="No">NO</option>
+        </select>
       </div>
       <div className="form-group col-6">
         <label htmlFor="image">
@@ -72,24 +62,12 @@ function FormComponent({
           value={image}
           onChange={(e) => handleChange(e)}
         >
+          <option value=""></option>
           <option value="img1">img1</option>
           <option value="img2">img2</option>
           <option value="img3">img3</option>
         </select>
       </div>
-
-      {/* <div className="form-group col-6 ">
-        <label htmlFor="time">
-          <b>Time</b>
-        </label>
-        <input
-          title="time"
-          type="text"
-          className="form-control"
-          value={time}
-          onChange={(e) => handleChange(e)}
-        />
-      </div> */}
       <div className="form-group col-6">
         <label htmlFor="type">
           <b>Select Type</b>
@@ -109,7 +87,7 @@ function FormComponent({
         </select>
       </div>
       <button type="submit" className="btn btn-primary">
-        Submit
+        Save
       </button>
     </form>
   );
