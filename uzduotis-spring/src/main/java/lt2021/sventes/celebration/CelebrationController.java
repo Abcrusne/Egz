@@ -39,4 +39,11 @@ public class CelebrationController {
 		service.delete(celebrationId);
 	}
 
+	@RequestMapping(path = "/{celebrationId}", method = RequestMethod.PUT)
+	public void updateSveikinimas(@PathVariable final Long celebrationId,
+			@RequestBody final CreateCelebrationCommand cmd) {
+		service.update(new CelebrationFromService(celebrationId, cmd.getTitle(), cmd.getDesc(), cmd.getImage(),
+				cmd.getType(), cmd.getFlag()));
+	}
+
 }

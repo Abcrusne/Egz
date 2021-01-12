@@ -7,19 +7,17 @@ export default class FormContainer extends Component {
   constructor() {
     super();
     this.state = {
-      audio: '',
-      date: '',
+      desc: '',
+      flag: '',
       image: '',
-      name: '',
-      text: '',
-      time: '',
+      title: '',
       type: '',
     };
   }
 
   handleChange = (event) => {
     this.setState({
-      [event.target.name]: event.target.value,
+      [event.target.title]: event.target.value,
     });
   };
 
@@ -27,9 +25,9 @@ export default class FormContainer extends Component {
     event.preventDefault();
     console.log(this.state);
     axios
-      .post(`${myUrl}/api/sveikinimai`, this.state)
+      .post(`${myUrl}/api/celebrations`, this.state)
       .then((response) => {
-        this.props.history.push('/administracija');
+        this.props.history.push('/admin');
       })
       .catch((error) => {
         console.log(error);
@@ -38,16 +36,14 @@ export default class FormContainer extends Component {
 
   render() {
     return (
-      <main className="container pt-5">
+      <main classtitle="container pt-5">
         <FormComponent
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
-          audio={this.state.audio}
-          date={this.state.date}
+          desc={this.state.desc}
+          flag={this.state.flag}
           image={this.state.image}
-          name={this.state.name}
-          text={this.state.text}
-          time={this.state.time}
+          title={this.state.title}
           type={this.state.type}
         />
       </main>

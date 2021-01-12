@@ -12,22 +12,21 @@ import FormContainer from './components/Items/FormContainer';
 import NotReady from './components/NotReady/NotReadyComponent';
 import NoMatch from './components/Nomatch/NoMatch';
 
-
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <NavigationComponent />
       <Switch>
         <Route exact path="/" component={ItemListContainer} />
-        <Route exact path="/sveikinimai" component={ItemListContainer} />
-        <Route exact path="/sveikinimai/:id" component={ItemDetailContainer} />
+        <Route exact path="/celebrations" component={ItemListContainer} />
+        <Route exact path="/celebrations/:id" component={ItemDetailContainer} />
         <Route
           exact
-          path="/administracija"
+          path="/admin"
           component={ItemsAdministrationContainer}
         />
-        <Route exact path="/administracija/naujas" component={FormContainer} />
-        <Route exact path="/vietos" component={NotReady} />
+        <Route exact path="/admin/new" component={FormContainer} />
+        <Route exact path="/countries" component={NotReady} />
         <Route exact path="/delete" component={NotReady} />
         <Route path="*" component={NoMatch} />
         <Route component={NoMatch} />

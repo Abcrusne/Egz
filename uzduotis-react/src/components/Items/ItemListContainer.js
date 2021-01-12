@@ -7,16 +7,16 @@ export default class ItemListContainer extends Component {
   constructor() {
     super();
     this.state = {
-      sveikinimai: [],
+      celebrations: [],
     };
   }
 
   componentDidMount() {
-    document.title = 'Perlaikymas';
+    document.title = 'Perlaikymas uzduotis-Spring';
     axios
-      .get(`${myUrl}/api/sveikinimai`)
+      .get(`${myUrl}/api/celebrations`)
       .then((res) => {
-        this.setState({ sveikinimai: res.data });
+        this.setState({ celebrations: res.data });
       })
       .catch((err) => {
         console.log(err);
@@ -24,14 +24,14 @@ export default class ItemListContainer extends Component {
   }
 
   render() {
-    // const { data } = this.state.sveikinimai;
+    // const { data } = this.state.celebrations;
 
     // if (data) {
     return (
       <div className="container pt-4">
         <div className="row d-flex justify-content-center">
-          {this.state.sveikinimai.map((sveikinimas) => {
-            return <ItemCardComponent sveikinimas={sveikinimas} />;
+          {this.state.celebrations.map((celebration) => {
+            return <ItemCardComponent celebration={celebration} />;
           })}
         </div>
       </div>

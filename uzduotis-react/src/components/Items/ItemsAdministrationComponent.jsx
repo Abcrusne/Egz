@@ -1,39 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 //import { Link } from 'react-router-dom';
-import img1 from '../../img/img1.png';
+import img1 from '../../img/img1.jpg';
 import img2 from '../../img/img2.jpg';
 import img3 from '../../img/img3.jpg';
 
-const ItemsAdministrationComponent =({ sveikinimas,
+const ItemsAdministrationComponent =({ celebration,
     //  deleteItem 
     }) =>{
         const imgSrc =
-    sveikinimas.image === 'img1'
+    celebration.image === 'img1'
       ? img1
-      : sveikinimas.image === 'img2'
+      : celebration.image === 'img2'
       ? img2
       : img3;
   return (
     <tr>
-      <th scope="row">{sveikinimas.id}</th>
+      <th scope="row">{celebration.id}</th>
       <td>
         {' '}
         <img
           src={imgSrc}
-          //src={sveikinimas.image}
+          //src={celebration.image}
           className="card-img-top"
           style={{ width: 50, height: 50 }}
-          alt={sveikinimas.name}
+          alt={celebration.title}
         />
       </td>
       <td>
-        {/* <Link to={`/admin/greetings/${id}`}>{sveikinimas.name} </Link> */}
-        {sveikinimas.name}
+        {/* <Link to={`/admin/celebrations/${id}`}>{celebration.name} </Link> */}
+        {celebration.name}
       </td>
       <td>
         {/* <button className="btn btn-danger" 
-        // onClick={deleteItem(sveikinimas.id)}
+        // onClick={deleteItem(celebration.id)}
         >
           Delete item
         </button> */}

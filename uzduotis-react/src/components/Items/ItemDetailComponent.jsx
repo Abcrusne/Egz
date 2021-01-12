@@ -1,14 +1,14 @@
 import React from 'react';
 //import { Link } from 'react-router-dom';
-import img1 from '../../img/img1.png';
+import img1 from '../../img/img1.jpg';
 import img2 from '../../img/img2.jpg';
 import img3 from '../../img/img3.jpg';
 
-const ItemDetailComponent = ({ sveikinimas }) => {
+const ItemDetailComponent = ({ celebration }) => {
   const imgSrc =
-    sveikinimas.image === 'img1'
+    celebration.image === 'img1'
       ? img1
-      : sveikinimas.image === 'img2'
+      : celebration.image === 'img2'
       ? img2
       : img3;
   return (
@@ -17,18 +17,16 @@ const ItemDetailComponent = ({ sveikinimas }) => {
         <img
           className="align-self-start mr-3"
           src={imgSrc}
-          alt={sveikinimas.name}
+          alt={celebration.title}
           style={{
             height: '25rem',
           }}
         />
         <div className="media-body mt-3">
-          <h2>Name: {sveikinimas.name}</h2>
-          <p>Text: {sveikinimas.text}</p>
-          <p>Date: {sveikinimas.date}</p>
-          <p>Time: {sveikinimas.time}</p>
-          <p>Audio: {sveikinimas.audio}</p>
-          <p>Type: {sveikinimas.type}</p>
+          <h2>Title: {celebration.title}</h2>
+          <p>Desc: {celebration.desc}</p>
+          <p>Type: {celebration.type}</p>
+          <p>Flag: {celebration.flag}</p>
         </div>
       </div>
     </div>

@@ -13,13 +13,13 @@ function NavigationComponent(props) {
               </Link>
             </li>
             <li className="nav-item active">
-              <Link to="/administracija" className="nav-link">
+              <Link to="/admin" className="nav-link">
                 Admin
               </Link>
             </li>
             <li className="nav-item active">
-              <Link to="/vietos" className="nav-link">
-                Places
+              <Link to="/countries" className="nav-link">
+                Countries
               </Link>
             </li>
           </ul>

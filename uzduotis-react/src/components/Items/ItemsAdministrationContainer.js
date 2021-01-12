@@ -8,31 +8,31 @@ export default class ItemsAdministrationContainer extends Component {
   constructor() {
     super();
     this.state = {
-      sveikinimai: [],
+      celebrations: [],
     };
   }
 
   componentDidMount() {
     axios
-      .get(`${myUrl}/api/sveikinimai`)
+      .get(`${myUrl}/api/celebrations`)
       .then((response) => {
-        this.setState({ sveikinimai: response.data });
+        this.setState({ celebrations: response.data });
         //console.log(this.state);
       })
       .catch((error) => {
         console.log(error);
       });
   }
-//   deleteItem = (id) => {
-//     axios
-//       .delete(`${myUrl}/api/sveikinimai/${id}`)
-//       .then((sveikinimas) => {
-//         this.setState({ sveikinimai: sveikinimas.data });
-//       })
-//       .catch((error) => {
-//         console.log(error);
-//       });
-//   };
+  //   deleteItem = (id) => {
+  //     axios
+  //       .delete(`${myUrl}/api/celebrations/${id}`)
+  //       .then((celebration) => {
+  //         this.setState({ celebrations: celebration.data });
+  //       })
+  //       .catch((error) => {
+  //         console.log(error);
+  //       });
+  //   };
   // deleteItem = (e) => {
   //   e.preventDefault();
   //   axios
@@ -49,7 +49,7 @@ export default class ItemsAdministrationContainer extends Component {
     return (
       <main className="container pt-3">
         <div className="row pb-3">
-          <Link to={`/administracija/naujas`} className="btn btn-primary">
+          <Link to={`/admin/new`} className="btn btn-primary">
             Add new item
           </Link>
         </div>
@@ -59,15 +59,15 @@ export default class ItemsAdministrationContainer extends Component {
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Image</th>
-                <th scope="col">Name</th>
+                <th scope="col">Title</th>
                 <th scope="col"> </th>
               </tr>
             </thead>
             <tbody>
-              {this.state.sveikinimai.map((sveikinimas) => {
+              {this.state.celebrations.map((celebration) => {
                 return (
                   <ItemsAdministrationComponent
-                    sveikinimas={sveikinimas}
+                    celebration={celebration}
                     // deleteItem={this.deleteItem}
                   />
                 );

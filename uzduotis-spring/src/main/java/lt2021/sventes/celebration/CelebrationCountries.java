@@ -20,6 +20,10 @@ public class CelebrationCountries {
 	@JoinColumn(name = "celebration_id")
 	private Celebration celebration;
 
+//	@ManyToOne(cascade = { CascadeType.MERGE, CascadeType.DETACH })
+//	@JoinColumn(name = "country_id")
+//	private Country country;
+
 	public CelebrationCountries() {
 		super();
 	}
@@ -39,9 +43,5 @@ public class CelebrationCountries {
 	public void setCelebration(Celebration celebration) {
 		this.celebration = celebration;
 	}
-
-//	@ManyToOne(cascade = { CascadeType.MERGE, CascadeType.DETACH })
-//	@JoinColumn(name = "country_id")
-//	private Country country;
 
 }
