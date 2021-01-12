@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.js": "/uzduotis-spring/static/js/main.71b79d3a.chunk.js",
+    "main.js.map": "/uzduotis-spring/static/js/main.71b79d3a.chunk.js.map",
+    "runtime-main.js": "/uzduotis-spring/static/js/runtime-main.edcb2a89.js",
+    "runtime-main.js.map": "/uzduotis-spring/static/js/runtime-main.edcb2a89.js.map",
+    "static/css/2.437d98bc.chunk.css": "/uzduotis-spring/static/css/2.437d98bc.chunk.css",
+    "static/js/2.3cf57519.chunk.js": "/uzduotis-spring/static/js/2.3cf57519.chunk.js",
+    "static/js/2.3cf57519.chunk.js.map": "/uzduotis-spring/static/js/2.3cf57519.chunk.js.map",
+    "static/js/3.c2ec2812.chunk.js": "/uzduotis-spring/static/js/3.c2ec2812.chunk.js",
+    "static/js/3.c2ec2812.chunk.js.map": "/uzduotis-spring/static/js/3.c2ec2812.chunk.js.map",
+    "index.html": "/uzduotis-spring/index.html",
+    "precache-manifest.e03a4682930f214b39f5dc016a00ffae.js": "/uzduotis-spring/precache-manifest.e03a4682930f214b39f5dc016a00ffae.js",
+    "service-worker.js": "/uzduotis-spring/service-worker.js",
+    "static/css/2.437d98bc.chunk.css.map": "/uzduotis-spring/static/css/2.437d98bc.chunk.css.map",
+    "static/js/2.3cf57519.chunk.js.LICENSE.txt": "/uzduotis-spring/static/js/2.3cf57519.chunk.js.LICENSE.txt",
+    "static/media/img1.jpg": "/uzduotis-spring/static/media/img1.b231a657.jpg",
+    "static/media/img2.jpg": "/uzduotis-spring/static/media/img2.4eb4419f.jpg",
+    "static/media/img3.jpg": "/uzduotis-spring/static/media/img3.5ae99eaa.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.edcb2a89.js",
+    "static/css/2.437d98bc.chunk.css",
+    "static/js/2.3cf57519.chunk.js",
+    "static/js/main.71b79d3a.chunk.js"
+  ]
+}
